@@ -10,15 +10,21 @@ function addTodo() {
   }
 
   const li = document.createElement("li");
-
   li.innerHTML = `
-          <div> 
-            <h3>${title}</h3> <br>
-            <p>${date || "--|--"} <br> 
-            ${time || "--|--"}</p> <br>
-            <button class="done btn">Done</button>
-            <button class="edit btn">Edit</button>
-            <button class="delete btn">Delete</button>`;
+    <div> 
+      <h3>${title}</h3> 
+      <br> 
+      <p>
+        ${date || "--|--"} 
+        <br> 
+        ${time || "--|--"}
+      </p> 
+      <br> 
+      <button class="done btn">Done</button> 
+      <button class="edit btn">Edit</button> 
+      <button class="delete btn">Delete</button>
+    </div>
+  `;
 
   li.querySelector(".done").onclick = function () {
     li.style.textDecoration = "line-through";

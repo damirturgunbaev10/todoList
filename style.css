@@ -11,7 +11,7 @@ h2{
 }
 
 .todo-list{
-    margin: 200px auto;
+    margin: 100px auto;
     width: 300px;
     height: 300px;
     display: flex;
@@ -32,6 +32,10 @@ input {
     margin: 10px auto;
     border: 2px solid rgb(20, 186, 20);
     border-radius: 5px;
+}
+
+.time{
+    margin-top: 10px;
 }
 
 button{
@@ -67,7 +71,6 @@ p {
 }
 
 .done{
-    margin-left: 10px;
     background-color: lightgreen;
 }
 
@@ -79,4 +82,11 @@ p {
 .delete{
     margin-left: 10px;
     background-color: lightcoral;
+}
+
+li{
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 2px solid rgb(20, 186, 20);
 }
